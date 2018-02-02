@@ -5,6 +5,7 @@ node_js:
 
 before_script:
   - "npm install --dev"
+  - "npm install -g jasmine-node"
 
 script:
   - "npm run test"
