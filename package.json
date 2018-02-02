@@ -4,8 +4,8 @@
   "description": "Another Chip-8 Emulator (JavaScript)",
   "main": "Chip8.js",
   "scripts": {
-    "test": "./node_modules/.bin/jasmine ./test/*.test.js",
-    "coverage": "./node_modules/.bin/istanbul cover --include-all-sources jasmine ./test/*.test.js"
+    "test": "jasmine ./test/*.test.js",
+    "coverage": "istanbul cover --include-all-sources jasmine ./test/*.test.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,6 @@
     "eslint": "^4.16.0",
     "eslint-plugin-jasmine": "^2.9.1",
     "istanbul": "^0.4.5",
-    "jasmine-node": "^1.14.5"
+    "jasmine": "^2.9.0"
   }
 }
