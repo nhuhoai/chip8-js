@@ -5,7 +5,8 @@
   "main": "Chip8.js",
   "scripts": {
     "test": "jasmine ./test/*.test.js",
-    "coverage": "istanbul cover --include-all-sources jasmine ./test/*.test.js"
+    "coverage": "istanbul cover --include-all-sources jasmine ./test/*.test.js",
+    "coveralls": "istanbul cover --include-all-sources jasmine ./test/*.test.js && istanbul-coveralls"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
     "eslint": "^4.16.0",
     "eslint-plugin-jasmine": "^2.9.1",
     "istanbul": "^0.4.5",
+    "istanbul-coveralls": "^1.0.3",
     "jasmine": "^2.9.0"
   }
 }
