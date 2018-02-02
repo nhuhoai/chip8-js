@@ -1,0 +1,25 @@
+{
+  "name": "chip8-js",
+  "version": "0.1.0",
+  "description": "Another Chip-8 Emulator (JavaScript)",
+  "main": "Chip8.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhuhoai/chip8-js.git"
+  },
+  "keywords": [
+    "chip8",
+    "emulator",
+    "js",
+    "javascript"
+  ],
+  "author": "Nhu-Hoai Robert VO <nhuhoai.vo@nhuvo.ch>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nhuhoai/chip8-js/issues"
+  },
+  "homepage": "https://github.com/nhuhoai/chip8-js#readme"
+}
