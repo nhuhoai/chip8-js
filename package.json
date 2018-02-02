@@ -4,8 +4,8 @@
   "description": "Another Chip-8 Emulator (JavaScript)",
   "main": "Chip8.js",
   "scripts": {
-    "test": "jasmine ./test/*.test.js",
-    "coverage": "istanbul cover --include-all-sources jasmine ./test/*.test.js"
+    "test": "./node_modules/.bin/jasmine ./test/*.test.js",
+    "coverage": "./node_modules/.bin/istanbul cover --include-all-sources jasmine ./test/*.test.js"
   },
   "repository": {
     "type": "git",
