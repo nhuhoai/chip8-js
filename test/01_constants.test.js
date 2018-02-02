@@ -16,8 +16,16 @@ describe('Constants', function() {
   });
 
   it('CPU constants', function() {
+    chip8.CLOCK_SPEED = 0;
     chip8.MEMORY_SIZE = 0;
+    chip8.MEMORY_START = 0;
+    chip8.V_SIZE = 0;
+    chip8.STACK_SIZE = 0;
+    expect(chip8.CLOCK_SPEED).toEqual(60);
     expect(chip8.MEMORY_SIZE).toEqual(4096);
+    expect(chip8.MEMORY_START).toEqual(0x200);
+    expect(chip8.V_SIZE).toEqual(16);
+    expect(chip8.STACK_SIZE).toEqual(16);
   });
 
   it('GFX constants', function() {
