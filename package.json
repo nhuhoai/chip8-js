@@ -5,7 +5,7 @@
   "main": "Chip8.js",
   "scripts": {
     "test": "jasmine ./test/*.test.js",
-    "coverage": "istanbul cover --include-all-sources jasmine .test/*.test.js"
+    "coverage": "istanbul cover --include-all-sources jasmine ./test/*.test.js"
   },
   "repository": {
     "type": "git",
