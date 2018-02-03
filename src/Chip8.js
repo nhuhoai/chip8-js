@@ -13,6 +13,10 @@
  *  Chip-8 object
  */
 function Chip8() {
+  //
+  //  Constants
+  //
+
   /// (unsigned char) Clock speed [Hz]
   Object.defineProperty(this, 'CLOCK_SPEED', {
     writable: false,
@@ -67,6 +71,107 @@ function Chip8() {
     enumerable: true,
     configurable: false,
     value: 32
+  });
+
+  /// (unsigned char) Display height size
+  Object.defineProperty(this, 'PAD_SIZE', {
+    writable: false,
+    enumerable: true,
+    configurable: false,
+    value: 16
+  });
+
+
+  //
+  //  Properties (Hardware)
+  //
+
+  /// (Uint16Array) Program counter
+  Object.defineProperty(this, 'pc', {
+    writable: false,
+    enumerable: false,
+    configurable: false,
+    value: new Uint16Array(1)
+  });
+
+  /// (Uint8Array) Memory
+  Object.defineProperty(this, 'memory', {
+    writable: false,
+    enumerable: false,
+    configurable: false,
+    value: new Uint8Array(this.MEMORY_SIZE)
+  });
+
+  /// (Uint16Array) Curent opcode
+  Object.defineProperty(this, 'opcode', {
+    writable: false,
+    enumerable: false,
+    configurable: false,
+    value: new Uint16Array(1)
+  });
+
+  /// (Uint8Array) Register V
+  Object.defineProperty(this, 'v', {
+    writable: false,
+    enumerable: false,
+    configurable: false,
+    value: new Uint8Array(this.V_SIZE)
+  });
+
+  /// (Uint16Array) Index register
+  Object.defineProperty(this, 'i', {
+    writable: false,
+    enumerable: false,
+    configurable: false,
+    value: new Uint16Array(1)
+  });
+
+  /// (Uint16Array) Stack
+  Object.defineProperty(this, 'stack', {
+    writable: false,
+    enumerable: false,
+    configurable: false,
+    value: new Uint16Array(16)
+  });
+
+  /// (Uint16Array) Stack pointer
+  Object.defineProperty(this, 'sp', {
+    writable: false,
+    enumerable: false,
+    configurable: false,
+    value: new Uint16Array(1)
+  });
+
+  /// (Uint8Array) Delay timer
+  Object.defineProperty(this, 'delay', {
+    writable: false,
+    enumerable: false,
+    configurable: false,
+    value: new Uint8Array(1)
+  });
+
+  /// (Uint8Array) Sound timer
+  Object.defineProperty(this, 'sound', {
+    writable: false,
+    enumerable: false,
+    configurable: false,
+    value: new Uint8Array(1)
+  });
+
+  /// (Uint8Array) GFX
+  Object.defineProperty(this, 'gfx', {
+    writable: false,
+    enumerable: false,
+    configurable: false,
+    value: new Uint8Array(this.GFX_WIDTH * this.GFX_HEIGHT)
+  });
+
+  /// (Uint8Array) Sound timer
+  Object.defineProperty(this, 'pad', {
+    writable: false,
+    enumerable: false,
+    configurable: false,
+    value: new Uint8Array(this.PAD_SIZE)
   });
 }
 

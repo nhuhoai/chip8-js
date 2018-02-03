@@ -34,4 +34,9 @@ describe('Constants', function() {
     expect(chip8.GFX_WIDTH).toEqual(64);
     expect(chip8.GFX_HEIGHT).toEqual(32);
   });
+
+  it('Pad constants', function() {
+    chip8.PAD_SIZE = 0;
+    expect(chip8.PAD_SIZE).toEqual(16);
+  });
 });
